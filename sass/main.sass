@@ -1,0 +1,91 @@
+//custom Bootstrap variables
+$primary: #F9C41C
+
+
+    
+// main SASS    
+.navbar
+    width: 75%
+    margin: 0 auto
+    
+.navbar-bg
+    width: 100%
+    height: 83px
+    background-color: rgb(33,37,41)
+    position: fixed
+    top: 0
+    z-index: 10
+
+    
+.main
+    padding-top: 50px
+    height: 100vh
+    color: #fff
+    background-color: rgb(33,37,41)
+    position: relative
+    overflow: hidden
+    z-index: 2
+    display: flex
+    align-items: center
+    justify-content: center
+    
+    // @media (max-width: 1200px)
+    //     width: 65vh
+    // @media (max-width: 992px)
+    //     // height: 100%
+    //     width: 75vw
+    //     min-height: 0
+    //     padding-bottom: 0
+    &::before
+        content: ""
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        height: 100%
+        width: 45%
+        background-color: rgba(0, 0, 0, 0.85)
+        transform: skewX(-9deg)
+        transform-origin: top right
+        @media (max-width: 992px)
+            transform: skewX(-9deg)
+            transform-origin: top right
+    &-content
+        position: absolute
+        top: 40%
+        left: 13%
+        max-width: 40rem
+        &__phone
+            &:hover
+                text-decoration: underline
+
+.emptySpace
+    height: 83px        
+
+.bespoke
+    &-heading
+        &__image
+            width: 50%        
+        
+        
+.footer
+    &-map
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            top: 0
+            bottom: 0
+            right: 0
+            left: 0
+            height: 100%
+            width: 45%
+            background-color: rgba(0, 0, 0, 0.85)
+            z-index: 10000
+            
+
+
+
+// import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap"
