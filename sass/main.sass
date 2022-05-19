@@ -15,7 +15,6 @@ $primary: #F9C41C
     position: fixed
     top: 0
     z-index: 10
-
     
 .main
     padding-top: 50px
@@ -28,14 +27,6 @@ $primary: #F9C41C
     display: flex
     align-items: center
     justify-content: center
-    
-    // @media (max-width: 1200px)
-    //     width: 65vh
-    // @media (max-width: 992px)
-    //     // height: 100%
-    //     width: 75vw
-    //     min-height: 0
-    //     padding-bottom: 0
     &::before
         content: ""
         position: absolute
@@ -46,19 +37,19 @@ $primary: #F9C41C
         height: 100%
         width: 45%
         background-color: rgba(0, 0, 0, 0.85)
-        transform: skewX(-9deg)
+        transform: skewX(-6deg)
         transform-origin: top right
-        @media (max-width: 992px)
-            transform: skewX(-9deg)
-            transform-origin: top right
+        @media only screen and(max-width: 767px)
+            width: 50%
+        @media only screen and(max-width: 575px)
+            width: 65%
     &-content
         position: absolute
         top: 40%
         left: 13%
         max-width: 40rem
-        &__phone
-            &:hover
-                text-decoration: underline
+        @media only screen and(max-width: 991px)
+            left: 7%
 
 .emptySpace
     height: 83px        
@@ -72,17 +63,8 @@ $primary: #F9C41C
 .footer
     &-map
         position: relative
-        &::before
-            content: ""
-            position: absolute
-            top: 0
-            bottom: 0
-            right: 0
-            left: 0
-            height: 100%
-            width: 45%
-            background-color: rgba(0, 0, 0, 0.85)
-            z-index: 10000
+        box-shadow: 0 0 20px 10px #F1F3F4
+      
             
 
 
