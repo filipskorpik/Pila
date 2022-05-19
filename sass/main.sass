@@ -1,9 +1,12 @@
 //custom Bootstrap variables
 $primary: #F9C41C
 
+// reusable
+.emptySpace
+    height: 83px 
 
-    
-// main SASS    
+
+// Footer    
 .navbar
     width: 75%
     margin: 0 auto
@@ -15,7 +18,8 @@ $primary: #F9C41C
     position: fixed
     top: 0
     z-index: 10
-    
+
+// main  ************************************
 .main
     padding-top: 50px
     height: 100vh
@@ -60,15 +64,14 @@ $primary: #F9C41C
         @media only screen and(max-width: 991px)
             left: 7%
 
-.emptySpace
-    height: 83px        
-
+       
+// bespoke  ************************************
 .bespoke
     &-heading
         &__image
             width: 50%        
         
-        
+// footer  ************************************        
 .footer
     &-map
         position: relative
